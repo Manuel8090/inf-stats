@@ -1,14 +1,13 @@
 local Slot="Slot2" --the one that will be used as a dummy for stats(namekian)
 local PointSlot="Slot3" --the one that gets the points
 
-game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.Visible = true
-
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end;
 repeat
     game:GetService("RunService").RenderStepped:Wait();
 until game.Players.LocalPlayer;
+game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.Visible = true
 task.wait(5);
 Worlds={552500546,536102540}
 if game.PlaceId == Worlds[1] then
