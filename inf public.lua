@@ -1,6 +1,8 @@
 local Slot="Slot2" --the one that will be used as a dummy for stats(namekian)
 local PointSlot="Slot3" --the one that gets the points
 
+game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.Visible = true
+
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end;
